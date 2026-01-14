@@ -54,18 +54,18 @@ const Header: React.FC = () => {
           <div className="max-w-312 w-full mx-auto px-4 py-3 flex items-center justify-between">
             {/* Logo */}
             <Link to="/">
-              <img src={discoverLogo} alt="logo" className="w-32 sm:w-42" />
+              <img src={discoverLogo} alt="logo" className="w-40 sm:w-42" />
             </Link>
 
             {/* Desktop Right Side */}
             <div className="hidden sm:flex items-center gap-4">
               {/* Free Button */}
-              <span className="cursor-pointer select-none px-4 py-2 border border-primary rounded-full text-primary hover:bg-foreground transition">
-                100% Free Forever
+              <span className="cursor-pointer select-none px-4 py-4 border border-primary rounded-full text-primary hover:bg-foreground transition">
+                • 100% Free Forever
               </span>
 
               {/* Sign In Button */}
-              <Button className="py-2 px-5 rounded-full text-base md:text-lg">
+              <Button size="lg" className="py-4 px-5 rounded-full text-base md:text-lg">
                 Sign In
               </Button>
             </div>
