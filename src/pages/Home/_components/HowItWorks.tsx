@@ -4,27 +4,27 @@ export default function HowItWorks() {
   const steps = [
     {
       number: "1",
-      title: "Spot & Submit",
+      title: "Discover emerging trends",
       description:
-        "See something trending? Submit it with proof links. No email needed — just username & password.",
+        "Discover emerging trends",
     },
     {
       number: "2",
-      title: "Boost & Verify",
+      title: "See what’s gaining momentum",
       description:
-        "Seen it too? Boost it with your own proof. The more boosts, the higher the confidence score.",
+        "Check community confidence and boost activity.     ",
     },
     {
       number: "3",
-      title: "Earn & Unlock",
+      title: "Spot something early? Add it",
       description:
-        "Every boost on YOUR trends = 1 unlock. Access exclusive hidden trends before the masses.",
+        "Submit trends in seconds and unlock more insights.",
     },
   ];
 
   return (
     <div className="w-full  my-12 sm:my-16 md:my-20 lg:my-26 px-4">
-      <div className="bg-[#18141D]  rounded-3xl py-10 md:py-14 px-4 sm:px-6 md:px-10">
+      <div className="bg-[#131621]  rounded-3xl py-10 md:py-14 px-4 sm:px-6 md:px-10">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex justify-center mb-2">
@@ -106,18 +106,8 @@ export default function HowItWorks() {
           <AlertCircle className="w-6 h-6 md:w-7 md:h-7 text-red-500" />
 
           <h3 className="text-xl md:text-2xl font-bold text-white">
-            Brand-Free Zone
+            No sponsors. No brands. Just real trends from real people.
           </h3>
-        </div>
-        <div>
-          <p className="text-sm md:text-base text-slate-400 leading-relaxed">
-            This platform is 100% organic. Any established brands, obvious
-            promotions, or sponsored content will be removed instantly. We're
-            here to spot genuine trends, not market products. CapitalizeNow is a
-            non-profit, community-run platform. We don't collect emails, we
-            don't have sponsors, and we never will. This is by creators, for
-            creators.
-          </p>
         </div>
       </div>
     </div>

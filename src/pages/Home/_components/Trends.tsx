@@ -3,6 +3,7 @@ import { Search } from "lucide-react";
 
 
 import starImage from "@/assets/images/home/3star.svg";
+import hosting from "@/assets/images/home/hosting.svg";
 import TrendCards from "./TrendCards";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import CategoryFilter from "./CategoryFilter";
@@ -28,21 +29,19 @@ export default function Trends() {
       </div>
      
       {/* Trends Heading */}
-      <div className="flex flex-col sm:flex-row justify-between items-center mt-6 sm:mt-8 md:mt-10 lg:mt-16  gap-y-8">
+      <div className="flex flex-col sm:flex-row justify-between items-center mt-6 sm:mt-8 md:mt-10 lg:mt-16  gap-y-8 px-4">
         <div>
-          <h3 className="text-primary text-xl md:text-2xl lg:text-[32px] font-bold">
-            Live Trends{" "}
+          <p className="flex gap-2 items-center">
+            <img src={hosting} alt="" className="w-8"/>
+            <span className="uppercase text-[#9d9db5]">Live Feed</span>
+          </p>
+          <h3 className="text-secondary-foreground text-xl md:text-2xl lg:text-[32px] font-bold">
+            Trending Now{" "}
           </h3>
           <p className="flex flex-col sm:flex-row gap-2 text-accent-foreground">
             <span>8 trends</span>{" "}
             <span>• Updated in real-time by the community</span>
           </p>
-        </div>
-        <div className="flex items-center gap-2 ">
-          <CustomBadge>
-            <img src={starImage} alt="Filter Icon" className="w-6 h-6" />
-            <span>5 unlocks availble</span>
-          </CustomBadge>
         </div>
       </div>
 

@@ -4,8 +4,6 @@ import { Card } from "@/components/ui/card";
 import { Rocket, Eye, X } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import CustomBadge from "@/components/Shared/CustomBadge";
-import starYellow from "@/assets/images/home/3star.svg";
-import starOrrange from "@/assets/images/home/3star-orrange.svg";
 import expand from "@/assets/images/home/expand.svg";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -166,7 +164,7 @@ export default function TrendCards() {
 
   return (
     <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-6 mt-6 sm:mt-8 md:mt-10 lg:mt-14 px-4 sm:px-0">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 lg:gap-6 mt-6 sm:mt-8 md:mt-10 lg:mt-14 px-4 sm:px-4">
         {/* FIRST CARD: Spot a Trend - Static - No Layout Animation needed for this one primarily, or separate */}
         <Card
           className="
@@ -201,19 +199,7 @@ export default function TrendCards() {
             <p className="text-slate-400 text-sm md:text-base mb-4 max-w-xs">
               What you're seeing before it goes mainstream.
             </p>
-            <CustomBadge className="py-2">Click to Submit</CustomBadge>
           </div>
-
-          <img
-            src={starOrrange}
-            alt="Filter Icon"
-            className="w-6 h-6 absolute top-4 right-4"
-          />
-          <img
-            src={starYellow}
-            alt="Filter Icon"
-            className="w-6 h-6 absolute bottom-4 left-4"
-          />
         </Card>
 
         {/* REMAINING CARDS: From Array Data */}
@@ -311,13 +297,9 @@ export default function TrendCards() {
                 <div className="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/10 border border-primary/30 mb-4">
                   <Eye className="w-8 h-8 md:w-10 md:h-10 text-primary" />
                 </div>
-                <h4 className="text-white text-lg md:text-xl font-semibold mb-2">
-                  Locked Trend
+                <h4 className="text-primary text-lg md:text-xl font-semibold mb-2">
+                  Contribute To Unlocked
                 </h4>
-                <Button className="bg-slate-800 hover:bg-slate-700 text-white rounded-full px-6 py-2.5 text-sm md:text-base flex items-center gap-2">
-                  <Eye className="w-4 h-4" />
-                  Unlock Now
-                </Button>
               </div>
             )}
           </motion.div>

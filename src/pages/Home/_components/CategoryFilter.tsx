@@ -31,18 +31,18 @@ export default function CategoryFilter() {
   const visibleCategories = isExpanded ? categories : categories.slice(0, 6);
 
   return (
-    <div className="w-full">
+    <div className="w-full  mt-2 md:mt-[29px] p-4">
       {/* FILTER CARD */}
-      <div className="rounded-3xl md:rounded-[30px] border border-primary bg-[#55A1F20F] p-4 md:p-5 lg:p-6 space-y-4 mx-3 md:mx-0">
+      <div className="rounded-3xl md:rounded-[30px]  p-4 md:p-0 space-y-4 mx-3 md:mx-0">
         {/* TOP ROW – BADGES */}
-        <div className="flex flex-wrap items-center gap-2 md:gap-3 lg:gap-4">
+        <div className="flex flex-wrap items-center gap-2 md:gap-3 lg:gap-4 ">
           <Badge
             className="
               flex items-center gap-1.5 md:gap-2
               bg-primary text-white
               px-2.5 py-1.5
-              md:px-4 md:py-2
-              lg:px-5 lg:py-2.5
+              md:px-3 md:py-2
+               lg:py-2.5
               text-[10px] md:text-sm lg:text-base
               font-semibold cursor-pointer
             "
@@ -86,7 +86,6 @@ export default function CategoryFilter() {
 
         {/* BOTTOM ROW – CATEGORY FILTER */}
         <div className="flex flex-wrap items-center gap-2 md:gap-3">
-          <img src={filterImage} alt="Filter Icon" className="w-6 h-6" />
           <AnimatePresence mode="popLayout">
             {visibleCategories.map((category) => {
               const isActive = selectedCategory === category.id;
