@@ -45,10 +45,10 @@ export default function Trends() {
         </div>
       </div>
 
-       {/* filter category */}
+
       <CategoryFilter></CategoryFilter>
 
-      {/* trends cards  */}
+     
       <TrendCards />
     </div>
   );
