@@ -1,13 +1,10 @@
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
-
-
-import starImage from "@/assets/images/home/3star.svg";
 import hosting from "@/assets/images/home/hosting.svg";
 import TrendCards from "./TrendCards";
 import { BackgroundGradient } from "@/components/ui/background-gradient";
 import CategoryFilter from "./CategoryFilter";
-import CustomBadge from "@/components/Shared/CustomBadge";
+
 
 export default function Trends() {
   return (
@@ -44,11 +41,7 @@ export default function Trends() {
           </p>
         </div>
       </div>
-
-
       <CategoryFilter></CategoryFilter>
-
-     
       <TrendCards />
     </div>
   );
