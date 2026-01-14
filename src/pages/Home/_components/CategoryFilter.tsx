@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Flame, TrendingUp } from "lucide-react";
-import filterImage from "@/assets/images/home/filter.svg";
 import { FaGreaterThan } from "react-icons/fa";
 import { motion, AnimatePresence } from "motion/react";
 
